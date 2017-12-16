@@ -7,11 +7,11 @@ import android.os.Parcelable;
  * Created by yijiangwang on 2017/12/16.
  */
 
-public class Menu implements Parcelable {
+public class MediaSource implements Parcelable {
     private int mId;
     private String mName;
 
-    public Menu() {
+    public MediaSource() {
     }
 
     public int getId() {
@@ -30,7 +30,7 @@ public class Menu implements Parcelable {
         mName = name;
     }
 
-    public Menu(Parcel in) {
+    public MediaSource(Parcel in) {
         mId = in.readInt();
         mName = in.readString();
     }
@@ -46,15 +46,15 @@ public class Menu implements Parcelable {
         return 0;
     }
 
-    public static final Creator<Menu> CREATOR = new Creator<Menu>() {
+    public static final Creator<MediaSource> CREATOR = new Creator<MediaSource>() {
         @Override
-        public Menu createFromParcel(Parcel in) {
-            return new Menu(in);
+        public MediaSource createFromParcel(Parcel in) {
+            return new MediaSource(in);
         }
 
         @Override
-        public Menu[] newArray(int size) {
-            return new Menu[size];
+        public MediaSource[] newArray(int size) {
+            return new MediaSource[size];
         }
     };
 }
