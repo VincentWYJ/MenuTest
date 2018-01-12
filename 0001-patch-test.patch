@@ -1,0 +1,22 @@
+From 110c68afd2b2011ac92998cd5e0d5a1aa7f127fb Mon Sep 17 00:00:00 2001
+From: yijiangwang <yijiangwang@ecarx.com.cn>
+Date: Fri, 12 Jan 2018 15:37:06 +0800
+Subject: [PATCH] patch test
+
+---
+ app/build.gradle | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/app/build.gradle b/app/build.gradle
+index a9e907e..c81def1 100644
+--- a/app/build.gradle
++++ b/app/build.gradle
+@@ -27,4 +27,5 @@ dependencies {
+     compile 'com.android.support:appcompat-v7:25.3.1'
+     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+     testCompile 'junit:junit:4.12'
++//////////////////////////////////
+ }
+-- 
+2.7.4
+
